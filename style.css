@@ -1,0 +1,51 @@
+#train {
+    background-color: brown;
+    height: 20vh;
+    width: 20vw;
+}
+
+.Boggie {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 2%;
+    align-items: center;
+    height: 17vh;
+}
+
+.backward{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: center;
+    height: 17vh;
+}
+
+.solution-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.coach {
+    background-color: chartreuse;
+    flex-basis: 30%;
+    height: 10vh;
+    width: 13vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+.cemoflauge{
+    background-color: brown;
+    flex-basis: 30%;
+    height: 10vh;
+    width: 13vh;
+}
