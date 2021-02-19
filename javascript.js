@@ -4,7 +4,7 @@ let bogie = document.getElementsByClassName("Boggie");
 let trainsize = 10;
 let arr = []
 let tunnel = [];
-let windowsize = 3;
+let windowsize =11;
 
 // Populating the array
 for (let i = 0; i < trainsize; i++) {
@@ -23,10 +23,6 @@ function generateDiv() {
         tunnel.push(arr[currentIndex]);
     }
     currentIndex++;
-    if (currentIndex >= trainsize) {
-
-    }
-    console.log(tunnel)
     if (currentIndex > trainsize + windowsize) {
         currentIndex = 0
     }
@@ -36,7 +32,7 @@ function generateDiv() {
 // Rendering the window
 function render() {
     let render = `<div class =${currentIndex >= trainsize ? "backward" : "Boggie"}>`
-    for (let k = 2; k >= 0; k--) {
+    for (let k = windowsize-1; k >= 0; k--) {
         render = render + `<div id=\"render\" class =${tunnel[k] === undefined ? "" : " coach"}>${tunnel[k] === undefined ? "" : tunnel[k]} </div>`
     }
     render = render + "</div>"
@@ -49,6 +45,7 @@ function render() {
 function onClick() {
     setInterval(() => generateDiv(), 1000)
 }
+
 
 
 // t= [1]       
